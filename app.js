@@ -29,6 +29,7 @@ function drawLine(x, y) {
     ctx.lineTo(0, 0);
     ctx.stroke();
 }
+//creating an event listener than activate the function when and where the user clicks in the canvas
 canvas.addEventListener("click", e => {
     drawLine(e.offsetX, e.offsetY)
 });
@@ -45,6 +46,7 @@ function drawRectangle(x, y) {
     ctx.rect(x,y, 50,30);
     ctx.stroke();
 }
+//event listener for rectangle
 canvas.addEventListener("click", e => {
     drawRectangle(e.offsetX, e.offsetY)
 });
@@ -61,6 +63,7 @@ function drawCircle(x, y) {
     ctx.arc(x, y, 10, 0, Math.PI*2, false);
     ctx.fill();
 }
+//event listener for circles
 canvas.addEventListener("click", e => {
     drawCircle(e.offsetX, e.offsetY)
 });
@@ -70,8 +73,9 @@ canvas.addEventListener("click", e => {
 
 
 //Task 4: Add Color Selection and Canvas Clearing
-
 //Using color input to set the drawing color
+
+//Could not get the color input to work
 
 
 
